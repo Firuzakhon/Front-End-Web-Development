@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+    <link href="normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+  </head>
+  <body>
+    <div id="container">
+    <form class="contact" id="question" method="post" action="index.html">        
+        <h1>Contact</h1>
+        <fieldset>
+          <legend><span class="number">1</span> Your contact information</legend> <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name"> <br> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="mail" name="user_email"> <br>
+        </fieldset>
+        <fieldset>
+          <legend><span class="number">2</span> Your question:</legend> <br>
+        <label for="question">Question:</label> <br> <br>
+        <textarea id="question name="user_question" placeholder="Write your question" style="height:100px"></textarea>
+        <button class="button" type="submit">SUBMIT</button>        
+        </fieldset>    
+    </form>
+    </div>
+  </body>
+</html>
