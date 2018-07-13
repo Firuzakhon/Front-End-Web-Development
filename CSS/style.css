@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   }
 
 header {
@@ -40,32 +43,43 @@ a:hover {
   color: grey;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-div {
-  flex: 1;
-}
-
 img:hover {
   opacity: 0.5; 
 }
 
-footer {
-  text-align: left;
+.address, .contact, .links {
   background-color: lightgrey;
-  font-size: 90%; 
- }
+}
 
- .address, .contact, links {
-   display: inline-block;
- }
+.left{
+  text-align:left;
+  float:left;
+  padding: 30px;
+  }
+  .right{
+  float:right;
+  text-align:right;
+  padding: 30px;
+  }
+  .centered{
+  text-align:center;
+  }
+
+  .footer_links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
  .fab {
-  color: red;
+  color: blue;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 3em; 
+  text-align: center;
+}
+
+.fab:hover {
+  opacity: .5;  
 }
 
  /* Media Queries */
@@ -161,6 +175,8 @@ button {
    }
 
    /* Flexbox */
+
+
 
    .row {
      display: flex;
