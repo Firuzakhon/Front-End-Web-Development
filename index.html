@@ -4,9 +4,10 @@
 <title>FIDA LLC</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="normalize.css">
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+
 <!--Bootstrap CSS-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
 integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -14,41 +15,39 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
 </head>
 <body>    
     <header class="header" id="main-header">
-        <figure>
-            <img src="Images/logoJpg.jpg" class="logo" alt="logo" style="max-width: 100%;height: auto;">
-        </figure>
-        <!--Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#"><strong>FIDA LLC</strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <figure>
+                <img src="Images/logoJpg.jpg" class="logo" alt="logo" style="max-width: 100%;height: auto;">
+            </figure>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="AboutUs.html" target="_blank">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Carousel.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Partners</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="AboutUs.html" target="_blank">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Carousel.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Partners</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="ContactUs.html">Contact</a>
-                    </li>                   
-                   </ul>
-                </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactUs.html">Contact</a>
+                </li>                   
+                </ul>
+            </div>
         </nav> <!--/Navigation-->
     </header>
     <!--Bootsrap-->
         <div class="container-pt-4">
             <div class="row">
                 <div class="col-sm">
-                    <h3 class="mb-4 ">Owner Operators</h3>
+                    <h3 class="mb-4">Owner Operators</h3>
                     <img class="mb-4 img-fluid rounded" src="Images/owner_operator.jpg" alt="owner_operator">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
@@ -56,7 +55,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                 </div>
                 <div class="col-sm">
                     <h3 class="mb-4">Drivers</h3>
-                    <img class="mb-4 img-fluid rounded" src="Images/truck_driver.jpg" alt="truck_driver">
+                    <img class="mb-4 img-fluid rounded" src="Images/truck_driver2.jpg" alt="truck_driver">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                     <button type="button" class="my-button"><a href="#">Learn More</a></button>
@@ -90,7 +89,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                             </div>
                             <div class="form-group">
                                 <label for="dob">Date of birth:</label>
-                                <input type="text" class="form-control" id="dob">
+                                <input type="date" class="form-control" id="dob">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
@@ -115,20 +114,20 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
         </div>
         </div>
     <footer>
-        <div class="row">
-            <div class="col-sm">
+        <div class="row footer-container">
+            <div class="footer-column">
                 <p class="left"><strong>FIDA LLC</strong><br>
                 1300 S 6th St.<br>
                 Louisville, KY<br> 
                 40208</p>
             </div>
-            <div class="col-sm">
+            <div class="footer-column">
                 <p class="centered"><strong>e-mail:</strong> <a href="#">fidallc@gmail.com</a><br>
                 <strong>phone:</strong> 502-296-8673 <br>
                 <strong>fax:</strong> 502-123-4567</p>
             </div>
-            <div class="col-sm">
-                <ul class="footer_links">                  
+            <div class="footer-column">
+                <ul class="right footer_links">                  
                     <li><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li><br>              
                     <li><a class="nav-link" href="AboutUs.html" target="_blank">About</a></li><br>                
                     <li><a class="nav-link" href="Carousel.html">Gallery</a></li> <br>                  

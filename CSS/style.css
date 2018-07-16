@@ -7,31 +7,29 @@
 
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 25px;
-  display: flex;
+    display: flex;
   flex-direction: column;
   min-height: 100vh;
   }
 
 header {
-  background-color: #d3d3d3;
-  padding: 10px 10px;
-}
-
-.header ul {
-  text-align: right;
+  background-color: white;
 }
 
 #navbarNav {
   width: 50px;
   background-position: 100% .4em;
-  padding-right: .6em;
+  padding-right: .6em; 
+  justify-content: flex-end;
  }
 
 a {
   display: inline;
   padding: 10px 15px;
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link {
   color: black;
 }
 
@@ -43,13 +41,30 @@ a:hover {
   color: grey;
 }
 
-img:hover {
+.mb-4:hover {
   opacity: 0.5; 
 }
 
-.address, .contact, .links {
+.container-pt-4 {
   background-color: lightgrey;
 }
+
+/* .img-fluid {
+  object-fit: cover;
+  object-position: bottom-left;
+  height: 250px;
+  width: 100%;
+}
+
+.col-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+
+/* Styling a footer */
+
 
 .left{
   text-align:left;
@@ -61,25 +76,48 @@ img:hover {
   text-align:right;
   padding: 30px;
   }
+
   .centered{
-  text-align:center;
+  text-align: center;
+  padding: 30px;
+  }
+
+  footer {
+    background-color: #939697;
+  }
+
+  .footer-column:last-of-type {
+    border-right: 10px solid transparent;
   }
 
   .footer_links {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;  
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: .5em;
+}
+
+.footer-container {
+  justify-content: center;
+}
+
+.follow_us {
+  padding: 30px 0;
+  text-align: center;
 }
 
  .fab {
-  color: blue;
+  color: black;
   text-shadow: 1px 1px 1px #ccc;
   font-size: 3em; 
   text-align: center;
 }
 
 .fab:hover {
-  opacity: .5;  
+  opacity: .5;
+  font-size: 5em;
+  transition: 1s ease-out;  
 }
 
  /* Media Queries */
@@ -131,9 +169,9 @@ textarea {
  label {
    /* To make sure that all labels have the same size and are properly aligned */
    font-weight: bold;
-   display: inline-block;
-   width: 80px;
+   display: inline-block; 
    text-align: right;
+   padding: 10px;
  }
 
  .button {
@@ -173,6 +211,11 @@ button {
      float: left;
      padding-right: 10px;
    }
+
+   /* Styling Modal Window */
+
+ 
+
 
    /* Flexbox */
 
