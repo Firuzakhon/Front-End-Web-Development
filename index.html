@@ -6,11 +6,11 @@
 <link href="normalize.css">
 
 <!--Bootstrap CSS-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
-integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" 
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 </script>
 </head>
 <body>    
@@ -23,12 +23,12 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav">  
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                </li>
+                <a class="nav-link" href="index.html">Home</a>
+                </li>             
                 <li class="nav-item">
-                    <a class="nav-link" href="AboutUs.html" target="_blank">About</a>
+                    <a class="nav-link" href="AboutUs.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Carousel.html">Gallery</a>
@@ -48,21 +48,21 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
             <div class="row">
                 <div class="col-sm">
                     <h3 class="mb-4">Owner Operators</h3>
-                    <img class="mb-4 img-fluid rounded" src="Images/owner_operator.jpg" alt="owner_operator">
+                    <a href=""><img class="mb-4 img-fluid rounded" src="Images/apply.jpg" alt="owner_operator"></a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                     <button type="button" class="my-button"><a href="#">Learn More</a></button>
                 </div>
                 <div class="col-sm">
                     <h3 class="mb-4">Drivers</h3>
-                    <img class="mb-4 img-fluid rounded" src="Images/truck_driver2.jpg" alt="truck_driver">
+                    <a href=""><img class="mb-4 img-fluid rounded" src="Images/apply.jpg" alt="truck_driver"></a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                     <button type="button" class="my-button"><a href="#">Learn More</a></button>
                 </div>
                 <div class="col-sm">
                     <h3 class="mb-4">Apply Now</h3>
-                    <img class="mb-4 img-fluid rounded" src="Images/apply.jpg" alt="apply">
+                    <a href=""><img class="mb-4 img-fluid rounded" src="Images/apply.jpg" alt="apply"></a>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                     <!-- Button trigger modal -->
@@ -105,7 +105,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                             </div><!--/Apply Form-->
                     </div>
                     <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">SUBMIT</button>
+                    <button type="button" id="submit" class="btn btn-primary" data-dismiss="modal">SUBMIT</button>
                     </div>
                 </div>
                 </div>
@@ -113,72 +113,33 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
             </div>
         </div>
         </div>
-    <footer>
-        <div class="row footer-container">
-            <div class="footer-column">
-                <p class="left"><strong>FIDA LLC</strong><br>
-                1300 S 6th St.<br>
-                Louisville, KY<br> 
-                40208</p>
-            </div>
-            <div class="footer-column">
-                <p class="centered"><strong>e-mail:</strong> <a href="#">fidallc@gmail.com</a><br>
-                <strong>phone:</strong> 502-296-8673 <br>
-                <strong>fax:</strong> 502-123-4567</p>
-            </div>
-            <div class="footer-column">
-                <ul class="right footer_links">                  
-                    <li><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li><br>              
-                    <li><a class="nav-link" href="AboutUs.html" target="_blank">About</a></li><br>                
-                    <li><a class="nav-link" href="Carousel.html">Gallery</a></li> <br>                  
-                    <li><a class="nav-link" href="#">Partners</a></li> <br>               
-                    <li><a class="nav-link" href="ContactUs.html">Contact</a></li> </p> 
-                </ul>
-                
-            </div>
-        </div>
-        <!-- <div class="footer">              
-            <div class="address">
-                <p class="left"><strong>FIDA LLC</strong><br>
-                1300 S 6th St.<br>
-                Louisville, KY<br> 
-                40208</p>
-            </div>
-            <div class="contact">
-                <p class="centered"><strong>e-mail:</strong> <a href="#">fidallc@gmail.com</a><br>
-                <strong>phone:</strong> 502-296-8673 <br>
-                <strong>fax:</strong> 502-123-4567</p>
-            </div>
-            <div class="links">  
-                <p class="right">Links<br>
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a><br>              
-                <a class="nav-link" href="AboutUs.html" target="_blank">About</a><br>                
-                <a class="nav-link" href="Carousel.html">Gallery</a> <br>                  
-                <a class="nav-link" href="#">Partners</a> <br>               
-                <a class="nav-link" href="ContactUs.html">Contact</a> </p>                                    
-            </div>             -->
-            <div class="follow_us">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-twitter-square"></i></a>
-            </div>             
-          
-            <div class="copyright">
-                <small>&copy FIDA LLC. All rights reserved.</small>
-            </div>       
+    <footer>     
+        <div class="follow_us">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>           
+        </div> 
+            
+        <div class="copyright"><small>&copy FIDA LLC. All rights reserved.</small>
+        </div>       
     </footer> 
     <!--Bootstrap-->
+    <script src="JavaScript/app.js"></script>
+    <script src="JavaScript/jquery-3.3.1"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>  
     <script>
-            $(window).resize(function(){
-	        if ($(window).width() <= 800){	
-		// do something here
-        console.log("I am doing something")
-	    }	
-        });
+        $(document).ready(function() {
+            $("#animate-element").click(function() {
+            $(".btn").animate({
+                opacity: '0.5',
+                height: '50px',
+                width: '50px',                
+            }, "slow");
+        })
+  
     </script> 
    </body>
 </html>

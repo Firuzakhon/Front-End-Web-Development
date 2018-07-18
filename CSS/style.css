@@ -7,20 +7,25 @@
 
 body {
   margin: 0;
-    display: flex;
+  display: flex;
   flex-direction: column;
   min-height: 100vh;
   }
 
-header {
-  background-color: white;
+.header {
+  background-color: white; 
 }
 
 #navbarNav {
-  width: 50px;
+  width: 30px;
   background-position: 100% .4em;
   padding-right: .6em; 
   justify-content: flex-end;
+ }
+
+ ul li {
+   text-transform: uppercase;
+   padding: 10px;
  }
 
 a {
@@ -41,6 +46,10 @@ a:hover {
   color: grey;
 }
 
+.mb-4 {
+  text-align: center;
+}
+
 .mb-4:hover {
   opacity: 0.5; 
 }
@@ -49,66 +58,44 @@ a:hover {
   background-color: lightgrey;
 }
 
-/* .img-fluid {
-  object-fit: cover;
-  object-position: bottom-left;
-  height: 250px;
-  width: 100%;
-}
-
-.col-sm {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
-
-
 /* Styling a footer */
 
-
-.left{
-  text-align:left;
-  float:left;
-  padding: 30px;
-  }
-  .right{
-  float:right;
-  text-align:right;
-  padding: 30px;
-  }
-
-  .centered{
-  text-align: center;
-  padding: 30px;
-  }
-
   footer {
-    background-color: #939697;
+    background-color: #222629;
   }
 
-  .footer-column:last-of-type {
-    border-right: 10px solid transparent;
-  }
-
-  .footer_links {
-    list-style-type: none;
-    margin-top: 0;  
-    padding-bottom: 0;
-    margin-bottom: 0;
-    line-height: .5em;
+.footer_links {
+  list-style-type: none;
+  margin-top: 0;  
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 6px;
+  margin-bottom: 0;
+  line-height: .3em;
 }
 
 .footer-container {
   justify-content: center;
 }
 
-.follow_us {
-  padding: 30px 0;
+.footer-column {
+  padding: 10px;
+}
+
+.copyright {
+  padding: 10px;
+  color: white;
   text-align: center;
 }
 
+.follow_us {
+  text-align: center;
+  padding-top: 10px;
+}
+
  .fab {
-  color: black;
+  color: white;
   text-shadow: 1px 1px 1px #ccc;
   font-size: 3em; 
   text-align: center;
@@ -129,7 +116,7 @@ a:hover {
 }
 
 
- /* Styling Contac Us Form */
+ /* Styling Contac Us Form */ 
 
  form {
    /* To center the form on the page */
@@ -184,11 +171,11 @@ textarea {
   text-transform: uppercase;
 }
 
-button {
+/* button {
   /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
   margin-left: 8em;
-}
+} */
 
  .number {
    font-weight: bold;
@@ -207,13 +194,102 @@ button {
      text-indent: 50px;
    }
 
-   .picture {
+   .about-picture {
      float: left;
-     padding-right: 10px;
+     padding: 10px;
+     /* border-radius: 10px; */
    }
 
-   /* Styling Modal Window */
+   .about-column {
+    float: left;
+    width: 70%;
+    padding: 10px;   
+}
 
+.address-column {
+  float: right;
+  width: 30%;
+  padding: 10px; 
+}
+
+.history, .our-chief, .team {
+  text-indent: 50px;
+}
+
+.chief-column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.team-column {
+  padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .chief-column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+ 
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Clear floats after the columns */
+.about-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+   /* Styling Carousel Page */
  
 
 
@@ -249,4 +325,10 @@ button {
       max-width: 100%;
       width: 100%;
     }
-  }
+
+    .footer-column {
+      display: block;
+      flex-direction: column;
+      width: 100%;
+    }
+}
