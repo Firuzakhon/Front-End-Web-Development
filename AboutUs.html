@@ -44,9 +44,9 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
         </nav> <!--/Navigation-->
         </header>
         <div class="about-div">
-        <div class="about-row">
-            <div class="about-column">
-                <strong>HISTORY</strong><br>
+        <div class="row">
+            <div class="col-lg">
+                <h2>HISTORY</h2>
                 <p class="history">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type 
@@ -55,7 +55,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                 the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
                 and more recently with desktop publishing software like Aldus PageMaker including 
                 versions of Lorem Ipsum.</p>
-                <strong>OUR LEADERSHIP</strong>
+                <h2>OUR LEADERSHIP</h2>
                 <p class="our-chief">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type 
@@ -67,7 +67,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
             </div>
             <div class="address-column">
                 <address>
-                    <strong>FIDA LLC</strong><br>
+                    <h4>FIDA LLC</h4>
                     1300 S 6th St.<br>
                     Louiville, KY<br>
                     40208<br>
@@ -77,10 +77,10 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                 </address>
             </div>
         </div>
-        <div class="chief-row">
-            <div class="chief-column">
+        <div class="row">
+            <div class="col-lg">
                 <div class="card">
-                    <img src="Images/ceo.jpg" alt="Sultan" style="width:50%">
+                    <img src="Images/Sultan.jpg" alt="Sultan" style="width:50%">
                     <div class="container">
                     <h2>Sultan Sharipov</h2>
                     <p class="title">CEO & Founder</p>
@@ -91,7 +91,7 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                 </div>
             </div>
               
-            <div class="chief-column">
+            <div class="col-lg">
                 <div class="card">
                     <img src="Images/ceo.jpg" alt="Islam" style="width:50%">
                     <div class="container">
@@ -103,9 +103,9 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                     </div>
                 </div>
             </div>  
-            <div class="team-row">
-                <div class="team-column">
-                <strong>OUR TEAM</strong><br>
+            <div class="row">
+                <div class="col-lg">
+                <h2>OUR TEAM</h2>
                 <p class="team">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type 
@@ -115,7 +115,72 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
                 and more recently with desktop publishing software like Aldus PageMaker including 
                 versions of Lorem Ipsum.</p>
                 </div>             
+            </div>
+            <!-- Container for the image gallery -->
+        <div class="gallery-container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+          <div class="numbertext">1 / 7</div>
+            <img src="Images/driver1.jpg" style="width:100%">
         </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 6</div>
+            <img src="Images/driver2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 6</div>
+            <img src="Images/driver3.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">4 / 6</div>
+            <img src="Images/driver4.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 6</div>
+            <img src="Images/driver5.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">6 / 6</div>
+            <img src="Images/driver6.jpg" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+        <!-- Image text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <!-- Thumbnail images -->
+        <div class="gallery-row">
+          <div class="gallery-column">
+            <img class="demo cursor" src="Images/driver1.jpg" style="width:100%" onclick="currentSlide(1)" alt="driver1">
+          </div>
+          <div class="gallery-column"> 
+            <img class="demo cursor" src="Images/driver2.jpg" style="width:100%" onclick="currentSlide(2)" alt="driver2">
+          </div>
+          <div class="gallery-column">
+            <img class="demo cursor" src="Images/driver3.jpg" style="width:100%" onclick="currentSlide(3)" alt="driver3">
+          </div>
+          <div class="gallery-column">
+            <img class="demo cursor" src="Images/driver4.jpg" style="width:100%" onclick="currentSlide(4)" alt="driver4">
+          </div>
+          <div class="gallery-column">
+            <img class="demo cursor" src="Images/driver5.jpg" style="width:100%" onclick="currentSlide(5)" alt="driver5">
+          </div> 
+          <div class="gallery-column">
+            <img class="demo cursor" src="Images/driver6.jpg" style="width:100%" onclick="currentSlide(6)" alt="driver6">
+          </div>
+        </div>
+      </div>
         </div><!--/about-div-->
         <footer>     
             <div class="follow_us">
@@ -128,9 +193,11 @@ integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9
             <div class="copyright"><small>&copy FIDA LLC. All rights reserved.</small>
             </div>       
         </footer> 
+        
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>  
+        <script src="JavaScript/app.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>
 
