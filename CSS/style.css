@@ -13,7 +13,14 @@ body {
   }
 
 .header {
-  background-color: white; 
+  background-color: grey; 
+  /* height: 100px;
+  width: 100%; */
+}
+
+.main-header 
+{
+  background-color: #000;
 }
 
 #navbarNav {
@@ -44,6 +51,13 @@ a:link {
 
 a:hover {
   color: grey;
+}
+
+.active, nav a:hover {  
+  color: #dea227;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .mb-4 {
@@ -97,13 +111,13 @@ a:hover {
  .fab {
   color: white;
   text-shadow: 1px 1px 1px #ccc;
-  font-size: 3em; 
+  font-size: 1em; 
   text-align: center;
 }
 
 .fab:hover {
   opacity: .5;
-  font-size: 5em;
+  font-size: 2em;
   transition: 1s ease-out;  
 }
 
@@ -205,9 +219,10 @@ h2 {
 
 .history, .our-chief, .team { 
   padding-left: 30px;
-  padding-right: 10px;
-  text-indent:  50px;
+  padding-right: 10px; 
+  text-align: justify;
 }
+
 
 /* .chief-column {
   float: left;
