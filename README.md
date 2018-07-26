@@ -1,4 +1,3 @@
-Front-End Web Development
 
 Front-End Web Development 
 This is my first project. I am creating a website for a family owned bussiness. It is a trucking company that
@@ -14,3 +13,4 @@ The "About Us" page is mostly about the company history, the team, and our found
 
 The "Contact" page has an address, and also it has a form where you can ask us a question. When the user
 clicks on the "Submit" button, a jQuery function will trigger an alert message.
+
