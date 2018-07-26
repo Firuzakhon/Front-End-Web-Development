@@ -2,7 +2,7 @@ $('#contact-button').click(function() {
     //const preview = $('#subject').val();
     
     //$('#subjectPreview').text(preview);
-    alert("Thank you for your question.");
+    alert("Sorry. This function is not available yet.");
   
 })
 
