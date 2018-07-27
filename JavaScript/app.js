@@ -4,7 +4,7 @@ $('#contact-button').click(function() {
     //$('#subjectPreview').text(preview);
     alert("Sorry. This function is not available yet.");
   
-})
+});
 
 
 $( window ).resize(function() {
